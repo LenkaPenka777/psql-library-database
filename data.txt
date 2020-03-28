@@ -1,0 +1,98 @@
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Семенов Владимир Сергеевич','01.08.2018','01.08.2019');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Павлов Семен Васильевич','03.08.2018','03.08.2019');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Курков Александр Сергеевич','15.12.2017','15.12.2018');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Иванов Иван Васильевич','16.10.2017','16.10.2018');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Петрова Елена Ивановна','21.08.2018','21.08.2019');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Косина Влада Петровна','05.09.2018','05.09.2019');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Ермошин Вячеслав Михайлович','06.01.2018','06.01.2019');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Курятов Артём Борисович','20.02.2018','20.02.2019');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Громина Евгения Евгеньевна','25.09.2017','25.09.2018');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Коробкина Ирина Ивановна','10.10.2017','10.10.2018');
+INSERT INTO READER VALUES
+  (nextval('SEQ_READER'),'Моржов Владислав Петрович','11.12.2017','11.12.2018');
+
+
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Художественная литература');
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Наука,образование');
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Компьютеры');
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Поэзия');
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Детские книги');
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Публицистика');
+INSERT INTO SUBJECT VALUES
+  (nextval('SEQ_SUBJECT'),'Фантастика');
+   
+ 
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Преступление и наказание','Ф.М.Достоевский','18.11.1995','19.11.2020','21');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Мастер и Маргарита','М.А.Булгаков','20.10.2001','21.10.2021','21');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Краткая история времени. От Большого Взрыва до черных дыр','Стивен Хокинг','05.09.2015','06.09.2022','42');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Физика','С.Каплун','09.06.2001','10.06.2008','42');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Много цифр. Анализ больших данных при помощи Excel','Джон Форман','23.07.2013','24.07.2017','63');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Фауст','Иоганн Гете','15.01.1990','14.01.2015','84');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Сказка о рыбаке и рыбке','Александр Пушкин','12.03.2003','13.03.2018','105');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Реквием','Анна Ахматова','13.02.2017','14.02.2032','84');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Приключения Тома Сойера','Марк Твен','09.05.2005','10.05.2020','105');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Незнайка на луне','Николай Носов','10.03.2007','11.03.2022','105');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Моя жизнь. Мои достижения','Генри Форд','23.12.1999','24.12.2009','126');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Инферно','Дэн Браун','12.01.2004','13.01.2029','147');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Облачный атлас','Дэвид Митчелл','04.04.2004','05.04.2029','147');
+INSERT INTO BOOK VALUES
+  (nextval('SEQ_BOOK'),'Эллигент','Вероника Рот','11.12.2008','12.12.2033','147');
+
+
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'1','01.08.2018','01.09.2018','11');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'2','04.08.2018','04.09.2018','55');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'9','15.08.2018','5.09.2018','88');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'9','16.08.2018','16.09.2018','44');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'5','29.08.2018','29.09.2018','99');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'4','04.10.2018','04.11.2018','33');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'10','29.09.2018','29.10.2018','77');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'11','29.09.2018','29.10.2018','110');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'8','25.10.2018','25.11.2018','121');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'7','15.10.2018','15.11.2018','154');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'6','11.10.2018','11.11.2018','66');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'6','12.10.2018','12.11.2018','143');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'11','03.10.2018','03.11.2018','22');
+INSERT INTO RETENTION_PERIOD VALUES
+  (nextval('SEQ_RETENTION_PERIOD'),'3','18.09.2018','18.10.2018','132');
