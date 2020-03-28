@@ -1,0 +1,44 @@
+\! chcp 1251
+CREATE DATABASE library5;
+\connect library5
+
+
+CREATE TABLE READER(
+NumberLibraryCard int          PRIMARY KEY,
+FullName          varchar(255) NULL,
+StartDate         date         NULL,
+CompletionDate    date         NULL);
+
+CREATE TABLE SUBJECT(
+SubjectID        int      PRIMARY KEY,
+Subject          varchar(255)  NULL);
+
+CREATE TABLE BOOK(
+EditionNumber          int           PRIMARY KEY,
+Title                  varchar(255)  NULL,
+Author                 varchar(255)  NULL,
+DateOfPublication      date          NULL,
+LibraryRetentionPeriod date          NULL,
+SubjectID              int           NOT NULL,
+
+CONSTRAINT  BOOK_SUBJECTFK
+            FOREIGN KEY (SubjectID)
+            REFERENCES SUBJECT (SubjectID)
+            ON DELETE CASCADE);
+
+CREATE TABLE RETENTION_PERIOD(
+RetentionPeriodID int           PRIMARY KEY,
+NumberLibraryCard int           NOT NULL,
+DateTaken         date          NULL,
+RetentionPeriod   date          NULL,
+EditionNumber     int           NOT NULL,
+CONSTRAINT  RETENTION_PERIOD_READERFK
+            FOREIGN KEY (NumberLibraryCard)
+            REFERENCES READER (NumberLibraryCard)
+            ON DELETE CASCADE,
+CONSTRAINT  RETENTION_PERIOD_BOOKFK 
+            FOREIGN KEY (
+EditionNumber)
+            REFERENCES BOOK (
+EditionNumber)
+            ON DELETE CASCADE);
